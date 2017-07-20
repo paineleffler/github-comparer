@@ -18,14 +18,14 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.15.3",
+    "html-webpack-plugin": "^2.29.0",
     "path": "^0.12.7",
     "query-string": "^4.3.4",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "react-router-dom": "^4.1.1"
-    "build": "webpack -p"
-    },
-    "devDependencies": {
+  },
+  "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.2",
