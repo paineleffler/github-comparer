@@ -22,8 +22,7 @@
     "query-string": "^4.3.4",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
-    "react-router-dom": "^4.1.1",
-    "serve-webpack-client": "0.0.4"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
