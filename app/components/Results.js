@@ -9,7 +9,7 @@ function Profile(props) {
   var info = props.info;
   return (
     <PlayerPreview avatar={info.avatar_url} username={info.login}>
-      <ul className='space-list-items'>
+      <ul className="user-details">
         {info.name && <li>{info.name}</li>}
         {info.location && <li>{info.location}</li>}
         {info.company && <li>{info.company}</li>}
@@ -29,7 +29,7 @@ function Player (props){
   return (
     <div>
       <h1 className='header'>{props.label}</h1>
-      <h3 style={{textAlign: 'center'}}>Score: {props.score}</h3>
+      <h3>Score: {props.score}</h3>
       <Profile info={props.profile}/>
     </div>
   )
@@ -90,19 +90,27 @@ class Results extends React.Component {
     }
 
     return (
-      <div className='row'>
-        <Player
-          label='Winner'
-          score={this.state.winner.score}
-          profile={this.state.winner.profile}
-        />
-        <Player
-          label='Loser'
-          score={this.state.loser.score}
-          profile={this.state.loser.profile}
-        />
-
-      </div>
+        <div style={{textAlign:"center"}} className="siimple-grid">
+          <h1>Results</h1>
+          <div className="siimple-grid-row">
+            <div className="siimple-grid-col siimple-grid-col--3"></div>
+            <div className="siimple-grid-col siimple-grid-col--3">
+              <Player
+                label='Winner'
+                score={this.state.winner.score}
+                profile={this.state.winner.profile}
+              />
+            </div>
+            <div className="siimple-grid-col siimple-grid-col--3">
+              <Player
+                label='Loser'
+                score={this.state.loser.score}
+                profile={this.state.loser.profile}
+              />
+            </div>
+            <div className="siimple-grid-col siimple-grid-col--3"></div>
+          </div>
+        </div>
     )
   }
 }

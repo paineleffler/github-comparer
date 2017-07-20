@@ -868,3 +868,6 @@ li, ul {
   width: 250px;
   border-radius: 10%;
 }
+.user-details {
+  margin: 5px;
+}
