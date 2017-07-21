@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open",
     "start": "node server.js",
+    "dev": "webpack-dev-server --open",
     "postinstall": "webpack -p"
   },
   "babel": {
@@ -25,9 +25,7 @@
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "react-router-dom": "^4.1.1",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
-  },
-  "devDependencies": {
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.2",
