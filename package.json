@@ -24,7 +24,6 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "express": "^4.15.3",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
     "html-webpack-plugin": "^2.29.0",
     "path": "^0.12.7",
     "query-string": "^4.3.4",
