@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack-dev-server --open",
-    "postinstall": "webpack -p"
+    "dev": "webpack-dev-server --open"
   },
   "babel": {
     "presets": [
